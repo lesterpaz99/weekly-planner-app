@@ -32,7 +32,7 @@ img {
   block-size: 100%;
 }
 
-.glassmorphism-effect, .container, .goals,
+.glassmorphism-effect, .bubble, .container, .goals,
 .planner, .card,
 .card__content {
   background: rgba(255, 255, 255, 0.1);
@@ -40,7 +40,7 @@ img {
   box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  border-radius: 16px;
+  border-radius: 1.6rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -92,6 +92,7 @@ img {
   grid-column: 1/5;
   grid-row: 1/2;
   z-index: 1;
+  text-shadow: 0px 0px 4px black;
 }
 .card__title p {
   color: white;
@@ -170,6 +171,43 @@ img {
   block-size: 90vh;
   inline-size: calc(80% - 20px);
   padding: 2.4rem;
+}
+
+.bubble {
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.bubble-one {
+  inline-size: 20rem;
+  block-size: 20rem;
+  position: absolute;
+  inset-block-start: -6rem;
+  inset-inline-end: 20rem;
+}
+
+.bubble-two {
+  inline-size: 4rem;
+  block-size: 4rem;
+  position: absolute;
+  inset-block-start: -1rem;
+  inset-inline-end: 45rem;
+}
+
+.bubble-three {
+  inline-size: 6rem;
+  block-size: 6rem;
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-start: 30rem;
+}
+
+.bubble-four {
+  inline-size: 8rem;
+  block-size: 8rem;
+  position: absolute;
+  inset-block-end: 3rem;
+  inset-inline-start: -2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

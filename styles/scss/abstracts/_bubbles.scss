@@ -1,0 +1,39 @@
+@forward '../base/utilities';
+
+.bubble {
+	@extend .glassmorphism-effect;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.bubble-one {
+	inline-size: 20rem;
+	block-size: 20rem;
+	position: absolute;
+	inset-block-start: -6rem;
+	inset-inline-end: 20rem;
+}
+
+.bubble-two {
+	inline-size: 4rem;
+	block-size: 4rem;
+	position: absolute;
+	inset-block-start: -1rem;
+	inset-inline-end: 45rem;
+}
+
+.bubble-three {
+	inline-size: 6rem;
+	block-size: 6rem;
+	position: absolute;
+	inset-block-start: 1rem;
+	inset-inline-start: 30rem;
+}
+
+.bubble-four {
+	inline-size: 8rem;
+	block-size: 8rem;
+	position: absolute;
+	inset-block-end: 3rem;
+	inset-inline-start: -2rem;
+}
