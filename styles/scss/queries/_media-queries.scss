@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		block-size: 100%;
+	}
+	.container {
+		display: initial;
+	}
+	.planner {
+		-webkit-margin-before: 4rem;
+		margin-block-start: 4rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.calendar {
+		display: block;
+	}
+
+	.card-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		gap: 2rem;
+		white-space: nowrap;
+		overflow-x: scroll;
+		padding: 1.5rem;
+	}
+	.card {
+		max-inline-size: 18rem;
+	}
+	.card__title {
+		-webkit-margin-start: 1rem;
+		margin-inline-start: 1rem;
+	}
+}

@@ -1,13 +1,2 @@
-@forward '../base/utilities';
+@use '../layout/main-container';
 @use './components';
-
-.container {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-	gap: 2rem;
-	block-size: 90vh;
-	inline-size: calc(80% - 20px);
-	padding: 2.4rem;
-
-	@extend .glassmorphism-effect;
-}
