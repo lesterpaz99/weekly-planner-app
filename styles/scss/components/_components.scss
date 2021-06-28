@@ -1,13 +1,17 @@
 @forward '../base/utilities';
+@use './goal';
+@use './calendar';
 
-.goals div:first-of-type {
+.goals > div:first-of-type,
+.planner > div:first-of-type {
 	-webkit-border-after: 1px solid white;
 	border-block-end: 1px solid rgba(255, 255, 255, 0.2);
 	-webkit-margin-after: 1rem;
 	margin-block-end: 1rem;
 }
 
-.goals {
+.goals,
+.planner {
 	@extend .glassmorphism-effect;
 	@extend .padding-box;
 
@@ -23,3 +27,5 @@
 		-webkit-border-after: 1px solid white;
 	}
 }
+
+// ADD BELLOW THE GOALS A DIGITAL CLOCK USING JS

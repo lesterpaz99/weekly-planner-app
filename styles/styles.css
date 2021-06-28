@@ -32,7 +32,9 @@ img {
   block-size: 100%;
 }
 
-.glassmorphism-effect, .goals, .container {
+.glassmorphism-effect, .container, .goals,
+.planner, .card,
+.card__content {
   background: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
   box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
@@ -42,35 +44,9 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.padding-box, .goals {
+.padding-box, .goals,
+.planner {
   padding: 2.4rem;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 2rem;
-  block-size: 90vh;
-  inline-size: calc(80% - 20px);
-  padding: 2.4rem;
-}
-
-.goals div:first-of-type {
-  -webkit-border-after: 1px solid white;
-  border-block-end: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-margin-after: 1rem;
-  margin-block-end: 1rem;
-}
-
-.goals__title {
-  font-size: 2.8rem;
-  font-weight: 600;
-  margin: 0;
-}
-.goals__description {
-  -webkit-margin-after: 3rem;
-  margin-block-end: 3rem;
-  -webkit-border-after: 1px solid white;
 }
 
 .goal {
@@ -93,6 +69,107 @@ img {
   padding: 1rem;
   -webkit-margin-end: 1rem;
   margin-inline-end: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  block-size: 10rem;
+  inline-size: 100%;
+  position: relative;
+  -webkit-margin-after: 2rem;
+  margin-block-end: 2rem;
+}
+.card__title {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  z-index: 1;
+}
+.card__title p {
+  color: white;
+  margin: 0;
+  -webkit-padding-end: 0.7rem;
+  padding-inline-end: 0.7rem;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+.card__content {
+  border-radius: 1.6rem;
+  grid-column: 2/5;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 2;
+  padding: 0.5rem;
+}
+.card__time {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+.card__caption {
+  margin: 0;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.goals > div:first-of-type,
+.planner > div:first-of-type {
+  -webkit-border-after: 1px solid white;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-margin-after: 1rem;
+  margin-block-end: 1rem;
+}
+
+.goals__title,
+.planner__title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+.goals__description,
+.planner__description {
+  -webkit-margin-after: 3rem;
+  margin-block-end: 3rem;
+  -webkit-border-after: 1px solid white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  block-size: 90vh;
+  inline-size: calc(80% - 20px);
+  padding: 2.4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
