@@ -22,6 +22,22 @@ img {
   block-size: auto;
 }
 
+p::-moz-selection,
+h2::-moz-selection,
+span::-moz-selection {
+  background-color: white;
+}
+
+p::-moz-selection, h2::-moz-selection, span::-moz-selection {
+  background-color: white;
+}
+
+p::selection,
+h2::selection,
+span::selection {
+  background-color: white;
+}
+
 .wrapper {
   block-size: 100%;
 }
@@ -260,6 +276,32 @@ img {
     -webkit-margin-start: 1rem;
     margin-inline-start: 1rem;
   }
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8a6a8;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #878587;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+
+p::-moz-selection,
+h2::-moz-selection,
+span::-moz-selection {
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

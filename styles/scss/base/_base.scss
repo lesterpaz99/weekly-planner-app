@@ -31,3 +31,19 @@ img {
 	max-inline-size: 100%;
 	block-size: auto;
 }
+
+p::-moz-selection,
+h2::-moz-selection,
+span::-moz-selection {
+	background-color: white;
+}
+
+p::-moz-selection, h2::-moz-selection, span::-moz-selection {
+	background-color: white;
+}
+
+p::selection,
+h2::selection,
+span::selection {
+	background-color: white;
+}
