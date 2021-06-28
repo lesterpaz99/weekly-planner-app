@@ -1,0 +1,12 @@
+@forward '../base/utilities';
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 2rem;
+	block-size: 90vh;
+	inline-size: calc(80% - 20px);
+	border: 2px solid red;
+
+	@extend .glassmorphism-effect;
+}
