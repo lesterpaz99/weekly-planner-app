@@ -32,7 +32,7 @@ img {
   block-size: 100%;
 }
 
-.glassmorphism-effect, .container {
+.glassmorphism-effect, .goals, .container {
   background: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
   box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
@@ -42,7 +42,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.padding-box {
+.padding-box, .goals {
   padding: 2.4rem;
 }
 
@@ -52,7 +52,47 @@ img {
   gap: 2rem;
   block-size: 90vh;
   inline-size: calc(80% - 20px);
-  border: 2px solid red;
+  padding: 2.4rem;
+}
+
+.goals div:first-of-type {
+  -webkit-border-after: 1px solid white;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-margin-after: 1rem;
+  margin-block-end: 1rem;
+}
+
+.goals__title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+.goals__description {
+  -webkit-margin-after: 3rem;
+  margin-block-end: 3rem;
+  -webkit-border-after: 1px solid white;
+}
+
+.goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.goal__icon {
+  inline-size: 3.4rem;
+  block-size: 3.4rem;
+  background-image: url("../assets/goal_icon.png");
+  background-position: center;
+  background-size: cover;
+  background-origin: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 1rem;
+  -webkit-margin-end: 1rem;
+  margin-inline-end: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

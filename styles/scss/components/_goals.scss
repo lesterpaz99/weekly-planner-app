@@ -1,0 +1,25 @@
+@forward '../base/utilities';
+
+.goals div:first-of-type {
+	-webkit-border-after: 1px solid white;
+	border-block-end: 1px solid rgba(255, 255, 255, 0.2);
+	-webkit-margin-after: 1rem;
+	margin-block-end: 1rem;
+}
+
+.goals {
+	@extend .glassmorphism-effect;
+	@extend .padding-box;
+
+	&__title {
+		font-size: 2.8rem;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	&__description {
+		-webkit-margin-after: 3rem;
+		margin-block-end: 3rem;
+		-webkit-border-after: 1px solid white;
+	}
+}

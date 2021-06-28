@@ -1,0 +1,24 @@
+.goal {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	&__icon {
+		inline-size: 3.4rem;
+		block-size: 3.4rem;
+		background-image: url('../assets/goal_icon.png');
+		background-position: center;
+		background-size: cover;
+		background-origin: center;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+		padding: 1rem;
+		-webkit-margin-end: 1rem;
+		margin-inline-end: 1rem;
+	}
+	&__description {
+	}
+}
